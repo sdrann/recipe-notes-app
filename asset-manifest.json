@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/recipe-notes-app/static/css/main.964fdded.css",
-    "main.js": "/recipe-notes-app/static/js/main.fdefc96a.js",
+    "main.css": "/recipe-notes-app/static/css/main.76e324c7.css",
+    "main.js": "/recipe-notes-app/static/js/main.44991c91.js",
     "static/js/787.5650137e.chunk.js": "/recipe-notes-app/static/js/787.5650137e.chunk.js",
     "index.html": "/recipe-notes-app/index.html",
-    "main.964fdded.css.map": "/recipe-notes-app/static/css/main.964fdded.css.map",
-    "main.fdefc96a.js.map": "/recipe-notes-app/static/js/main.fdefc96a.js.map",
+    "main.76e324c7.css.map": "/recipe-notes-app/static/css/main.76e324c7.css.map",
+    "main.44991c91.js.map": "/recipe-notes-app/static/js/main.44991c91.js.map",
     "787.5650137e.chunk.js.map": "/recipe-notes-app/static/js/787.5650137e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.964fdded.css",
-    "static/js/main.fdefc96a.js"
+    "static/css/main.76e324c7.css",
+    "static/js/main.44991c91.js"
   ]
 }
