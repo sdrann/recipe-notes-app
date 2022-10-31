@@ -23,6 +23,8 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
+import Input from "@mui/material/Input";
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: "yellow",
   boxShadow: "none",
@@ -77,7 +79,12 @@ function App() {
           >
             <div>
               <TextField
-                sx={{ maxWidth: "9em", margin: "auto 1em" }}
+                fullWidth
+                sx={{
+                  width: "100%",
+                  margin: "auto 1em",
+                  wordWrap: "break-word",
+                }}
                 id="standard-textarea"
                 label="Recipe"
                 placeholder="Recipe description"
@@ -90,11 +97,11 @@ function App() {
           {/* grid */}
           <Box sx={{ flexGrow: 1, margin: "1em", wordWrap: "break-word" }}>
             <Grid container spacing={2}>
-              <Grid item xs={12} sm={5}>
+              <Grid item xs={12} sm={4}>
                 <Item>
                   <div>
                     <TextField
-                      sx={{ maxWidth: "8em", margin: "auto 1em" }}
+                      sx={{ maxWidth: "8em", margin: "1em" }}
                       id="standard-textarea"
                       placeholder="Ingredient"
                       multiline
@@ -103,12 +110,25 @@ function App() {
                   </div>
                 </Item>
               </Grid>
-              <Grid item xs={12} sm={7}>
+              <Grid item xs={12} sm={4}>
+                <Item>
+                  <TextField
+                    sx={{ margin: "1em" }}
+                    type="number"
+                    id="standard-textarea"
+                    placeholder="Quantity"
+                    multiline
+                    variant="standard"
+                  />
+                </Item>
+              </Grid>
+
+              <Grid item xs={12} sm={4}>
                 <Item>
                   <Box sx={{ maxWidth: "8em", margin: "auto" }}>
-                    <FormControl fullWidth>
+                    <FormControl variant="standard">
                       <InputLabel id="demo-simple-select-label">
-                        Measure
+                        Unit
                       </InputLabel>
                       <Select
                         sx={{ height: "3em" }}
@@ -121,21 +141,23 @@ function App() {
                         <MenuItem value={10}>kg</MenuItem>
                         <MenuItem value={20}>g</MenuItem>
                         <MenuItem value={30}>mg</MenuItem>
-                        <MenuItem value={30}>L</MenuItem>
-                        <MenuItem value={30}>ml</MenuItem>
-                        <MenuItem value={30}>oz</MenuItem>
+                        <MenuItem value={40}>L</MenuItem>
+                        <MenuItem value={50}>ml</MenuItem>
+                        <MenuItem value={60}>oz</MenuItem>
                       </Select>
                     </FormControl>
                   </Box>
                 </Item>
               </Grid>
+              {/* 
               <Grid item xs={4}>
                 <Item>xs=4</Item>
               </Grid>
               <Grid item xs={8}>
                 <Item>xs=8</Item>
-              </Grid>
+              </Grid> */}
             </Grid>
+            <hr />
           </Box>
         </CardContent>
         <CardActions>
